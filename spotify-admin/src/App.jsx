@@ -9,7 +9,7 @@ import ListAlbum from "./pages/ListAlbum.jsx";
 import Sidebar from "./components/Sidebar.jsx";
 import Navbar from "./components/Navbar.jsx";
 
-export const url = "http://localhost:4000";
+export const url = "https://spotify-backend-r71h.onrender.com";
 
 const App = () => {
   return (
