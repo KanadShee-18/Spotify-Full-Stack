@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const url = "http://localhost:4000";
+  const url = "https://spotify-backend-r71h.onrender.com";
 
   return (
     <>
