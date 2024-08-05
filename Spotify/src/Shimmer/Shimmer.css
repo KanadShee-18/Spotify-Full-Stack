@@ -2,18 +2,55 @@
 
 .shimmer-wrapper {
   display: flex;
+  height: 100vh;
+}
+
+.shimmer-sidebar {
+  width: 30%;
+  background: #2f2f2f;
+  padding: 16px;
+  display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.shimmer-sidebar .shimmer {
+  height: 350px;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shimmer-content {
+  width: 70%;
+  background: #1a1a1a;
   padding: 16px;
 }
 
-.shimmer {
-  width: 100%;
+.shimmer-heading {
+  width: 50%;
+  height: 40px;
+  background: #2b2b2b;
+  margin-bottom: 16px;
+  border-radius: 25px;
+}
+
+.shimmer-card-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.shimmer-card {
+  width: calc(100% / 4 - 16px);
   height: 200px;
   background: #121212;
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shimmer-card.small {
+  height: 150px;
 }
 
 .shimmer::before {
@@ -43,21 +80,4 @@
   100% {
     left: 100%;
   }
-}
-
-.shimmer-title {
-  height: 30px;
-  width: 50%;
-  background: #2b2b2b;
-  margin-bottom: 8px;
-}
-
-.shimmer-card {
-  display: flex;
-  gap: 16px;
-}
-
-.shimmer-card .shimmer {
-  width: calc(100% / 5 - 16px);
-  height: 150px;
 }
