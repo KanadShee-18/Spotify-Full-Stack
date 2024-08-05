@@ -1,15 +1,25 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Player from "./components/Player";
 import Display from "./components/Display";
 import { PlayerContext } from "./context/PlayerContext";
+import Shimmer from "./Shimmer/Shimmer";
 
 const App = () => {
   const { audioRef, track, songsData } = useContext(PlayerContext);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (songsData.length > 0) {
+      setLoading(false);
+    }
+  }, [songsData]);
 
   return (
     <div className="h-screen bg-black">
-      {songsData.length !== 0 ? (
+      {loading ? (
+        <Shimmer />
+      ) : (
         <>
           <div className="h-[90%] flex">
             <Sidebar />
@@ -17,8 +27,7 @@ const App = () => {
           </div>
           <Player />
         </>
-      ) : null}
-
+      )}
       <audio
         ref={audioRef}
         src={track ? track.file : ""}
