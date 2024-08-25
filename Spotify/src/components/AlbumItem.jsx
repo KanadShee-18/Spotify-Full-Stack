@@ -10,7 +10,7 @@ const AlbumItem = ({ image, name, desc, id }) => {
             className="min-w-[180px] p-2 px-3 rounded cursor-pointer hover:bg-[#ffffff26]"
         >
             <img className="rounded" src={image} alt="" />
-            <p className="mt-2 mb-2 overflow-hidden font-bold text-nowrap text-ellipsis">
+            <p className="mt-2 mb-2 overflow-hidden font-semibold text-blue-200 text-nowrap text-ellipsis">
                 {name}
             </p>
             <p className="mb-4 text-sm font-medium text-slate-400">{desc}</p>
