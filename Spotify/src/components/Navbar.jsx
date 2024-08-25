@@ -13,22 +13,22 @@ const Navbar = () => {
                 <div className="flex items-center gap-2">
                     <img
                         onClick={() => navigate(-1)}
-                        className="w-8 p-2 bg-black cursor-pointer rounded-2xl"
+                        className="w-8 p-2 cursor-pointer bg-slate-700 bg-opacity-55 hover:bg-opacity-85 rounded-2xl"
                         src={assets.arrow_left}
                         alt=""
                     />
                     <img
                         onClick={() => navigate(1)}
-                        className="w-8 p-2 bg-black cursor-pointer rounded-2xl"
+                        className="w-8 p-2 cursor-pointer bg-slate-700 bg-opacity-55 hover:bg-opacity-85 rounded-2xl"
                         src={assets.arrow_right}
                         alt=""
                     />
                 </div>
                 <div className="flex items-center gap-4">
-                    <p className="bg-slate-700 bg-opacity-45 text-slate-200 text-[15px] px-4 py-2 rounded-lg hidden md:block cursor-pointer hover:bg-opacity-75 hover:text-white">
+                    <p className="bg-slate-700 bg-opacity-45 text-slate-200 text-[15px] px-4 py-2 rounded-lg cursor-pointer hover:bg-opacity-75 hover:text-white">
                         Explore Premium
                     </p>
-                    <p className="bg-black cursor-pointer py-1 px-3 rounded-2xl text-[15px] hover:bg-white hover:text-black">
+                    <p className="bg-black text-slate-200 cursor-pointer py-2 px-3 hidden md:block rounded-lg text-[15px] hover:text-white hover:bg-slate-700 hover:bg-opacity-75">
                         Install App
                     </p>
                     <p className="flex items-center justify-center text-black bg-purple-500 rounded-full w-7 h-7">
@@ -37,13 +37,13 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="flex items-center gap-2 mt-4">
-                <p className="px-4 py-1 text-black bg-white cursor-pointer rounded-2xl">
+                <p className="px-4 py-1 font-semibold cursor-pointer text-slate-300 bg-slate-700 bg-opacity-45 rounded-2xl">
                     All
                 </p>
-                <p className="px-4 py-1 bg-black cursor-pointer rounded-2xl">
+                <p className="px-4 py-1 bg-black cursor-pointer hover:text-slate-300 hover:bg-slate-700 hover:bg-opacity-45 rounded-2xl">
                     Music
                 </p>
-                <p className="px-4 py-1 bg-black cursor-pointer rounded-2xl">
+                <p className="px-4 py-1 bg-black cursor-pointer hover:text-slate-300 hover:bg-slate-700 hover:bg-opacity-45 rounded-2xl">
                     Podcasts
                 </p>
             </div>
