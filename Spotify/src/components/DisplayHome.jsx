@@ -17,6 +17,14 @@ const DisplayHome = () => {
         const slider = document.getElementById("slider");
         slider.scrollLeft += 250;
     };
+    const slideLeft2 = () => {
+        const slider2 = document.getElementById("slider2");
+        slider2.scrollLeft -= 250;
+    };
+    const slideRight2 = () => {
+        const slider2 = document.getElementById("slider2");
+        slider2.scrollLeft += 250;
+    };
 
     return (
         <>
@@ -61,20 +69,20 @@ const DisplayHome = () => {
                 <div className="relative">
                     <div className="absolute flex items-center gap-2 justify-end -top-14 right-0 z-[5]">
                         <button
-                            onClick={slideLeft}
+                            onClick={slideLeft2}
                             className="p-2 rounded-full bg-slate-800 text-slate-500 hover:text-slate-300 hover:bg-slate-600"
                         >
                             <FaArrowLeft />
                         </button>
                         <button
-                            onClick={slideRight}
+                            onClick={slideRight2}
                             className="p-2 rounded-full bg-slate-800 text-slate-500 hover:text-slate-300 hover:bg-slate-600"
                         >
                             <FaArrowRight />
                         </button>
                     </div>
                     <div
-                        id="slider"
+                        id="slider2"
                         className="flex w-full h-full overflow-x-scroll scroll-smooth scrollbar-hide"
                     >
                         {songsData.map((item, index) => (
