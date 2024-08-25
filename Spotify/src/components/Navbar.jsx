@@ -31,7 +31,7 @@ const Navbar = () => {
                     <p className="bg-black text-slate-200 cursor-pointer py-2 px-3 hidden md:block rounded-lg text-[15px] hover:text-white hover:bg-slate-700 hover:bg-opacity-75">
                         Install App
                     </p>
-                    <p className="flex items-center justify-center text-black bg-purple-500 rounded-full w-7 h-7">
+                    <p className="flex items-center justify-center text-black bg-pink-500 rounded-full w-7 h-7">
                         K
                     </p>
                 </div>
