@@ -36,7 +36,7 @@ const Sidebar = () => {
                     <p className="font-light text-slate-300">
                         it's easy we'll help you
                     </p>
-                    <button className="px-4 py-2 bg-slate-500 bg-opacity-60 text-[15px] text-white rounded-lg mt-4 hover:bg-opacity-70">
+                    <button className="px-4 py-2 bg-slate-500 bg-opacity-45 text-[15px] text-white rounded-lg mt-4 hover:bg-opacity-70">
                         <a
                             href="https://spotify-admin-52ud.onrender.com/"
                             target="_blank"
@@ -50,7 +50,7 @@ const Sidebar = () => {
                     <p className="font-light text-slate-300">
                         we'll keep you update on new episodes
                     </p>
-                    <button className="px-4 py-2 bg-slate-500 bg-opacity-60 text-[15px] text-white rounded-lg mt-4 hover:bg-opacity-80">
+                    <button className="px-4 py-2 bg-slate-500 bg-opacity-45 text-[15px] text-white rounded-lg mt-4 hover:bg-opacity-80">
                         Browse Podcast
                     </button>
                 </div>
