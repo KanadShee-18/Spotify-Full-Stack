@@ -21,7 +21,7 @@ const Display = () => {
         if (isAlbum && album) {
             displayRef.current.style.background = `linear-gradient(${bgColor}, #121212)`;
         } else {
-            displayRef.current.style.background = `radial-gradient(circle, rgba(1,13,40,1) 10%, rgba(5,5,5,1) 100%)`;
+            displayRef.current.style.background = `radial-gradient(circle, rgba(2,16,34,1) 0%, rgba(0,0,0,1) 100%)`;
         }
     }, [isAlbum, bgColor, album]);
 
